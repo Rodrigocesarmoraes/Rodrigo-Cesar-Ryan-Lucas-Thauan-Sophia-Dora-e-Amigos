@@ -11,10 +11,19 @@ body {
 .content {
   flex: 1;
 }
-
 footer {
-  background-color: #ff96f8c9;
+  background-color:#f29bfa;;
   color: white;
   padding: 25px;
   text-align: center;
+}
+#sobre-a-dora {
+    background-color: white; 
+    padding: 25px;            
+
+    border: 3px solid #f29bfa;    
+    border-radius: 15px;         
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+    margin-bottom: 25px;          
 }
