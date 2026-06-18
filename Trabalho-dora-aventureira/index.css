@@ -8,3 +8,13 @@ body {
     color: #333; 
     font-family: 'Quicksand', sans-serif;
 }
+.content {
+  flex: 1;
+}
+
+footer {
+  background-color: #ff96f8c9;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
