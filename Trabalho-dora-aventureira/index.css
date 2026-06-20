@@ -3,30 +3,68 @@ body {
     min-height: 100px;
     margin: 15px;
     background-attachment: fixed; 
-    background-color: #ee8af7cf;
     font-family: sans-serif;
     color: #333; 
     font-family: 'Quicksand', sans-serif;
+    background-image: linear-gradient(135deg, #ee8af7 0%, #a256f0 50%, #7b1fa2 100%);
 }
 .content {
   flex: 1;
+    max-width: 1000px;  
+    margin: 0 auto;     
+    padding: 20px;
 }
+
+header h1 {
+    font-size: 2.5rem;
+    color: #4a0e4e;     
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #ffab2d;     
+    margin-bottom: 15px;
+}
+
 footer {
-  background-color:#f29bfa;;
+
   color: white;
   padding: 25px;
   text-align: center;
 }
+header div {
+    background-color: rgba(252, 133, 35, 0.85); 
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    font-family: sans-serif;
+    color: white; 
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
 #sobre-a-dora {
-    background-color: white; 
+    background-color: rebeccapurple; 
     padding: 25px;            
 
     border: 3px solid #f29bfa;    
     border-radius: 15px;         
     
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
-    margin-bottom: 25px;          
+    margin-bottom: 25px;
+    
+    font-family: sans-serif;
+    color: white; 
+    font-family: 'Quicksand', sans-serif;
 }
+
+
 
 #fluxograma ul {
     display: flex;
@@ -39,19 +77,33 @@ footer {
 #fluxograma li {
     flex: 1;               
     min-width: 200px;      
-    background-color: white;
+    background-color: rgba(252, 133, 35, 0.85);
     padding: 20px;
-    
-  
     border: 3px solid #f29bfa;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    
-  
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-family: sans-serif;
+    color: white; 
+    font-family: 'Quicksand', sans-serif;
+}
+#fluxograma h2 {
+    color: #4a0e4e; 
 }
 
 #fluxograma li:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+#Ensinamentos {
+    background-color: rebeccapurple; 
+    padding: 25px;            
+    border: 3px solid #f29bfa;    
+    border-radius: 15px;         
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+    margin-bottom: 25px;
+    margin-top: 25px; 
+    font-family: sans-serif;
+    color: white; 
+    font-family: 'Quicksand', sans-serif;
 }
