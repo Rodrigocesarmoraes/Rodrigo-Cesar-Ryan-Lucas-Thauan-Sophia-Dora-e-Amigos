@@ -63,3 +63,17 @@
     color: white; 
     font-family: 'Quicksand', sans-serif;
 }
+
+#mapa_e_links{
+flex: 1;               
+    min-width: 200px;      
+    background-color: rgba(252, 133, 35, 0.85);
+    padding: 20px;
+    border: 3px solid #f29bfa;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-family: sans-serif;
+    color: white; 
+    font-family: 'Quicksand', sans-serif;
+}
