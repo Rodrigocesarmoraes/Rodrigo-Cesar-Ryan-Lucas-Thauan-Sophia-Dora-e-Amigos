@@ -1,53 +1,9 @@
-body {
-
-    min-height: 100px;
-    margin: 15px;
-    background-attachment: fixed; 
-    font-family: sans-serif;
-    color: #333; 
-    font-family: 'Quicksand', sans-serif;
-    background-image: linear-gradient(135deg, #ee8af7 0%, #a256f0 50%, #7b1fa2 100%);
-}
 .content {
   flex: 1;
     max-width: 1000px;  
     margin: 0 auto;     
     padding: 20px;
 }
-
-header h1 {
-    font-size: 2.5rem;
-    color: #4a0e4e;     
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 1.8rem;
-    color: #ffab2d;     
-    margin-bottom: 15px;
-}
-
-footer {
-
-  color: white;
-  padding: 25px;
-  text-align: center;
-}
-header div {
-    background-color: rgba(252, 133, 35, 0.85); 
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    font-family: sans-serif;
-    color: white; 
-    font-family: 'Quicksand', sans-serif;
-}
-
-
 
 #sobre-a-dora {
     background-color: rebeccapurple; 
