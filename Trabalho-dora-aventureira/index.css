@@ -1,38 +1,39 @@
 .content {
-  flex: 1;
-    max-width: 1000px;  
-    margin: 0 auto;     
+    flex: 1;
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px;
 }
 
+/* Configuração da introd-sobre a serie */
 #sobre-a-dora {
-    background-color: rebeccapurple; 
-    padding: 25px;            
+    background-color: rebeccapurple;
+    padding: 25px;
 
-    border: 3px solid #f29bfa;    
-    border-radius: 15px;         
-    
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+    border: 3px solid #f29bfa;
+    border-radius: 15px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     margin-bottom: 25px;
-    
+
     font-family: sans-serif;
-    color: white; 
+    color: white;
     font-family: 'Quicksand', sans-serif;
 }
 
 
-
+/* Configuração da Barra do fluxograma */
 #fluxograma ul {
     display: flex;
-    flex-wrap: wrap;       
-    gap: 15px;            
+    flex-wrap: wrap;
+    gap: 15px;
     padding: 0;
-    list-style: none;      
+    list-style: none;
 }
 
 #fluxograma li {
-    flex: 1;               
-    min-width: 200px;      
+    flex: 1;
+    min-width: 200px;
     background-color: rgba(252, 133, 35, 0.85);
     padding: 20px;
     border: 3px solid #f29bfa;
@@ -40,40 +41,141 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     font-family: sans-serif;
-    color: white; 
+    color: white;
     font-family: 'Quicksand', sans-serif;
 }
+
 #fluxograma h2 {
-    color: #4a0e4e; 
+    color: #4a0e4e;
 }
+
+#fluxograma strong {
+    color: #4a0e4e;
+    font-weight: bold;
+    font-size: 1rem;
+}
+/* Configuração dos ensinamentos */
+#Ensinamentos {
+    background-color: rebeccapurple;
+    padding: 25px;
+    border: 3px solid #f29bfa;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-family: sans-serif;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Configuração da pt-final */
+#mapa_e_links {
+    flex: 1;
+    min-width: 200px;
+    background-color: rgba(252, 133, 35, 0.85);
+    padding: 20px;
+    border: 3px solid #f29bfa;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-family: sans-serif;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#mapa_e_links:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Configuração da Barra de Navegação */
+.navbar {
+    background-color: rgba(74, 14, 78, 0.95); 
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 15px 15px; 
+    margin: 0px; 
+    border-radius: 0 0 15px 15px; 
+    border-bottom: 3px solid #f29bfa; 
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    color: #ffab2d;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+
+/* Hovers */
 
 #fluxograma li:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
-#Ensinamentos {
-    background-color: rebeccapurple; 
-    padding: 25px;            
-    border: 3px solid #f29bfa;    
-    border-radius: 15px;         
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
-    margin-bottom: 25px;
-    margin-top: 25px; 
-    font-family: sans-serif;
-    color: white; 
-    font-family: 'Quicksand', sans-serif;
+
+#sobre-a-dora:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-#mapa_e_links{
-flex: 1;               
-    min-width: 200px;      
-    background-color: rgba(252, 133, 35, 0.85);
-    padding: 20px;
-    border: 3px solid #f29bfa;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    font-family: sans-serif;
-    color: white; 
-    font-family: 'Quicksand', sans-serif;
+#Ensinamentos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15p
+}
+
+
+#mapa_e_links:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#mapa_e_links a {
+    color: #4a0e4e;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #4a0e4e;
+    padding-bottom: 2px;
+    transition: all 0.2s ease;
+}
+
+#mapa_e_links a:hover {
+    color: white;
+    border-bottom-color: #ffffff;
+
+}
+
+.nav-links a:hover {
+    color: #4a0e4e;
+    background-color: #ffab2d;
 }
