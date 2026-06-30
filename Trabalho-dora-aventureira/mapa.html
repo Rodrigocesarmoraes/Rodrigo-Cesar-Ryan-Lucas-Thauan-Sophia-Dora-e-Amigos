@@ -5,164 +5,239 @@
 
         <meta charset="UTF-8">
 
-        <meta name="viewport"
-              content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="style.css">
-
         <link rel="stylesheet" href="Mapa.css">
+        <link rel="icon" type="image" href="imgs/logotipo_dora.png">
 
         <title>Mapa da Dora a Aventureira</title>
 
     </head>
 
     <body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">Fandora</a>
+                <ul class="nav-links">
+                    <li><a href="#mapaOverlay">Mapa</a></li>
+                    <li><a href="index.html">Página Principal</a></li>
+                    <li><a href="personagens.html">Personagens</a></li>
+                    <li><a href="curiosidades.html">Curiosidades</a></li>
+                    <li><a href="spinoff.html">Spin-offs</a></li>
+                   
+                </ul>
+            </div>
+        </nav>
 
         <header>
-
-            <h1>Olá, aventureiro! Você está na página relacionada ao mapa de localizações
-                de Dora, a Aventureira </h1>
+            <h1>
+                Olá, aventureiro! Você está na página relacionada ao mapa de
+                localizações de Dora, a Aventureira.
+            </h1>
 
             <div>
-                Clique em um dos pontos que representam as localizações
-                para saber mais sobre elas:
+                Clique em um dos pontos que representam as localizações para
+                saber mais sobre elas.
             </div>
 
         </header>
 
-        <!-- Futuramente aqui ficará o mapa -->
+        <main>
 
-        <section id="mapa">
+            <section id="mapa">
+                <div id="mapaContainer">
+                    <img id="imgMapa" src="imgs/mapa2-Photoroom (1).png" alt="Mapa da Dora">
 
-            <div class="localizacao">
-                <h3>Casa da Dora</h3>
+                    <div id="mapaOverlay">
+                        <div class="quadranteAbaixo" id="q1" ></div>
+                        <div class="quadranteAbaixo" id="q2" ></div>
+                        <div class="quadranteAbaixo" id="q3" ></div>
+                        <div class="quadranteAbaixo" id="q4" ></div>
+                        <div class="quadranteAbaixo" id="q5" ></div>
+                        <div class="quadranteAbaixo" id="q6" ></div>
+                        <div class="quadranteAbaixo" id="q7" ></div>
+                        <div class="quadranteAbaixo" id="q8" ></div>
+                        <div class="quadranteAbaixo" id="q9" ></div>
+                        <div class="quadranteAbaixo" id="q10" ></div>
+                        <div class="quadranteAbaixo" id="q11" ></div>
+                        <div class="quadranteAbaixo" id="q12" ></div>
+                        <div class="quadranteAbaixo" id="q13" ></div>
+                        <div class="quadranteAbaixo" id="q14" ></div>
+                        <div class="quadranteAbaixo" id="q15" ></div>
+                        <div class="quadranteAbaixo" id="q16" ></div>
+                        <div class="quadranteAcima" id="q17" ></div>
+                        <div class="quadranteAcima" id="q18" ></div>
+                        <div class="quadranteAcima" id="q19" ></div>
+                        <div class="quadranteAcima" id="q20" ></div>
+                        <div class="quadranteAcima" id="q21" ></div>
+                        <div class="quadranteAcima" id="q22" ></div>
+                        <div class="quadranteAcima" id="q23" ></div>
+                        <div class="quadranteAcima" id="q24" ></div>
+                    </div>
+                    
+                    <article id="localizacoes">
 
-                <article class="descricao">
+                        <div class="localizacao" data-local="1">
 
-                    <p>
-                        A Casa da Dora é o principal ponto de partida das aventuras.
-                        Ela vive ali com sua família e normalmente começa suas jornadas
-                        ao lado de Botas após consultar o Mapa. Diversos episódios
-                        começam ou terminam nesse local, tornando-o um dos lugares mais
-                        importantes da série.
-                    </p>
+                            <h3>
+                                Casa da Dora
+                            </h3>
 
-                </article>
+                            <img class="imgLocalizacao" src="imgs/67fe19a10879cc03cc8d97707c435842-removebg-preview (1).png">
 
-            </div>
+                        </div>
 
-            <div class="localizacao">
-                <h3>Floresta</h3>
+                        <div class="localizacao" data-local="2">
 
-                <article class="descricao">
+                            <h3>
+                                Floresta
+                            </h3>
 
-                    <p>
-                        A Floresta é provavelmente a região mais explorada de toda a série.
-                        Ela conecta inúmeros caminhos e destinos, servindo como passagem
-                        para montanhas, rios, jardins e outras áreas. Muitas espécies de
-                        animais vivem ali e frequentemente ajudam Dora durante suas missões.
-                    </p>
+                            <img class="imgLocalizacao" src="imgs/83f4a71cecf992b0a128b90c1cd9110f-removebg-preview.png">
 
-                </article>
+                        </div>
 
-            </div>
+                        <div class="localizacao" data-local="3">
 
-            <div class="localizacao">
-                <h3>Ponte do Troll</h3>
+                            <h3>
+                                Ponte do Troll
+                            </h3>
 
-                <article class="descricao">
+                            <img class="imgLocalizacao" src="imgs/ponte da dora.png">
 
-                    <p>
-                        A Ponte do Troll é um dos locais mais icônicos da série. O Troll
-                        que a guarda frequentemente apresenta desafios ou enigmas que
-                        Dora precisa resolver para atravessar. Essa ponte simboliza a
-                        importância da inteligência, da coragem e da amizade nas aventuras.
-                    </p>
+                        </div>
 
-                </article>
+                        <div class="localizacao" data-local="4">
 
-            </div>
-
-            <div class="localizacao">
-                <h3>Grande Rio</h3>
-
-                <article class="descricao">
-
-                    <p>
-                        O Grande Rio é um importante obstáculo natural encontrado em
-                        várias aventuras. Para atravessá-lo, Dora frequentemente precisa
-                        utilizar barcos, pontes ou a ajuda de amigos. Suas margens ligam
-                        diferentes regiões do mundo da série.
-                    </p>
-
-                </article>    
-
-            </div>
-
-            <div class="localizacao">
-                <h3>Casa do Tico</h3>
-
-                <article class="descricao">
-
-                    <p>
-                        A Casa do Tico é o lar de Tico, um pequeno morador da floresta.
-                        É um lugar acolhedor onde Dora e seus amigos podem descansar e
-                        compartilhar histórias.
-                    </p>
-
-                </article>
-
-            </div>
-
-            <div class="localizacao">
-                <h3>Celeiro do Benny</h3>
-
-                <article class="descricao">
-
-                    <p>
-                        O Celeiro do Benny é um local onde Benny guarda seus pertences e
-                        itens úteis para as aventuras. É um lugar acolhedor onde Dora e
-                        seus amigos podem descansar e compartilhar histórias.
-                    </p>
-
-                </article>
-
-            </div>
-
-            <div class="localizacao">
-                <h3>Jardim da Isa</h3>
-
-                <article class="descricao">
-
-                    <p>
-                        O Jardim da Isa é um espaço verde e tranquilo onde Isa cultiva
-                        plantas e flores. É um lugar ideal para relaxar e desfrutar da
-                        natureza, além de ser um ponto de encontro para os personagens.
-                    </p>
-
-                </article>
-
-            </div>
-
-            <div class="localizacao">
-                <h3>Praia Verde</h3>
-
-                    <article  class="descricao">
+                            <h3 >
+                                Grande Rio
+                            </h3>
                             
-                        <p>
-                            A Praia Verde é uma das áreas costeiras mais conhecidas da série.
-                            Ela aparece em aventuras ligadas ao mar, à vida marinha e a
-                            atividades recreativas. É um local amplo e tranquilo, bastante
-                            diferente das regiões florestais normalmente exploradas por Dora.
-                        </p>
+                            <img class="imgLocalizacao" src="imgs/ChatGPT Image 24 de jun. de 2026, 13_48_10.png">
+
+                        </div>
+
+                        <div class="localizacao" data-local="5">
+
+                            <h3>
+                                Árvore de Chocolate
+                            </h3>
+
+                            <img class="imgLocalizacao" src="imgs/2JSFGGb73K7R5RnJpANcTwobV9wiqBKxgmlhZWusZKHK5MF1a3eEK_vt2uCE36BQX6a31hDedIJb00cGhJqhAODqyKbRiuhYxu9oCT1.jfif">
+
+                        </div>
+
+                        <div class="localizacao" data-local="6">
+
+                            <h3>
+                                Celeiro do Benny
+                            </h3>
+
+                            <img class="imgLocalizacao" src="imgs/ChatGPT_Image_24_de_jun._de_2026__14_06_54-removebg-preview.png">
+
+                        </div>
+
+                        <div class="localizacao" data-local="7">
+
+                            <h3>
+                                Lago dos Crocodilos
+                            </h3>
+
+                            <img class="imgLocalizacao" src="imgs/pvuhAnBgVZFwynVEVZc9ws567hYSVOTnuw7pXqSbkC7hYNgWvFZyh6X10Hz-esPIhUJYscoZ9Jr9i_qDhfmjpJljNurSutjWko35XNr2jGp.jfif">
+
+                        </div>
 
                     </article>
 
+                    <article id="descricoes">
+                
+                        <div class="descricao" data-local="1">
+                            <p>
+                                A Casa da Dora é o principal ponto de partida das
+                                aventuras. Ela vive ali com sua família e normalmente
+                                começa suas jornadas ao lado de Botas após consultar
+                                o Mapa. Diversos episódios começam ou terminam nesse
+                                local, tornando-o um dos lugares mais importantes da série.
+                            </p>
+                        </div>
+
+                        <div class="descricao" data-local="2">
+                            <p>
+                                A Floresta é provavelmente a região mais explorada de
+                                toda a série. Ela conecta inúmeros caminhos e destinos,
+                                servindo como passagem para montanhas, rios, jardins e
+                                outras áreas. Muitas espécies de animais vivem ali e
+                                frequentemente ajudam Dora durante suas missões.
+                            </p>
+                        </div>
+
+                        <div class="descricao" data-local="3">
+                            <p>
+                                A Ponte do Troll é um dos locais mais icônicos da série.
+                                O Troll que a guarda frequentemente apresenta desafios
+                                ou enigmas que Dora precisa resolver para atravessar.
+                                Essa ponte simboliza a importância da inteligência,
+                                da coragem e da amizade nas aventuras.
+                            </p>
+                        </div>
+
+                        <div class="descricao" data-local="4">
+                            <p>
+                                O Grande Rio é um importante obstáculo natural encontrado em diversas
+                                aventuras de Dora. Para atravessá-lo, Dora e Botas frequentemente precisam
+                                utilizar barcos, pontes ou outros meios de transporte, seguindo as
+                                orientações do Mapa. Suas margens conectam diferentes regiões e servem
+                                como passagem para vários dos principais destinos explorados na série.
+                            </p>
+                        </div>
+
+                        <div class="descricao" data-local="5">
+                            <p>
+                                A Árvore de Chocolate é um dos lugares mais curiosos e memoráveis do mundo
+                                de Dora. Diferentemente de uma árvore comum, ela produz deliciosas barras
+                                de chocolate em seus galhos, despertando a curiosidade de todos os
+                                personagens. Dora e Botas costumam passar por esse local durante algumas
+                                aventuras, seja para descansar ou admirar a paisagem. 
+                            </p>
+                        </div>
+
+                        <div class="descricao" data-local="6">
+                                <p>
+                                    O Celeiro do Benny é um dos principais locais da fazenda onde vive Benny. 
+                                    Nele são guardadas ferramentas, alimentos e outros equipamentos utilizados 
+                                    no dia a dia. Em diversas aventuras, Dora e Botas visitam o celeiro para
+                                    ajudar Benny a encontrar objetos perdidos, organizar materiais ou resolver
+                                    problemas relacionados às atividades da fazenda.
+                                </p>
+                        </div>
+
+                        <div class="descricao" data-local="7">
+                                <p>
+                                    O Lago dos Crocodilos é um dos obstáculos naturais mais famosos encontrados
+                                    por Dora durante suas aventuras. Suas águas são habitadas por crocodilos,
+                                    tornando a travessia um verdadeiro desafio. Para chegar ao outro lado,
+                                    Dora e Botas frequentemente precisam encontrar uma ponte, utilizar um barco
+                                    ou seguir um caminho seguro indicado pelo Mapa.
+                                </p>
+                        </div>
+
+                    </article>
+            
                 </div>
 
-        </section>
+            </section>
 
-       <script src="mapa.js"></script> 
+        </main>
+
+        </div>
+        
+        <footer class="footer">
+            <p>&copy; 2026 - Feito para a CEO da empressa Dora Corporations</p>
+        </footer>
+
+        <script src="mapa.js"></script>
 
     </body>
+
 </html>
