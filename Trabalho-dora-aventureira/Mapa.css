@@ -1,110 +1,140 @@
-
-
-#mapa {
-
+/* Configuração e alinhamento do cabeçalho da página */
+header {
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
-    gap: 15px;
-}
-
-
-.localizacao {
-
-    background-color: rebeccapurple; 
-    padding: 25px;            
-
-    border: 3px solid #f29bfa;    
-    border-radius: 15px;         
-    
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
-    margin-bottom: 25px;
-
-    display: inline-block;
-
-    color: white;
-
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1rem;
-
-    padding: 15px 20px;
-
-    cursor: pointer;
-
     text-align: center;
-
-    width: 50%;
-
+    margin-bottom: none;
+    padding-top: 30px;
 }
 
-.localizacao:hover {
-
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 6px 15px rgba(0, 0, 0, 0.1);
+/* Centralização e dimensionamento do container do mapa */
+#mapa {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 5px; 
+    box-sizing: border-box;
 }
 
+/* Posicionamento relativo para servir de base aos elementos filhos absolutos */
+#mapaContainer {
+    position: relative;
+    width: 100%;
+    max-width: 1800px;
+}
 
-.descricao {
-    background-color: rgba(252, 133, 35, 0.85);
+/* Ajuste responsivo da imagem de fundo do mapa */
+#imgMapa {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-    padding: 15px 20px;
-
-    border: 3px solid #f29bfa;
-    border-radius: 15px;
-
-    display: inline-block;
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-    
-    box-shadow:
-        0 4px 10px rgba(0, 0, 0, 0.05);
-
-    opacity: 0;
-
-    max-height: 0;
-
-    overflow: hidden;
-
-    transition:
-        opacity 0.3s ease,
-        max-height 0.3s ease;
-
+/* Criação do grid invisível de 8 colunas e 3 linhas sobre o mapa */
+#mapaOverlay, #localizacoes {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     pointer-events: none;
+}
 
-    margin-top: 10px;
+/* Alinhamento dos elementos nos quadrantes que mostram a descrição abaixo */
+.quadranteAbaixo {
+    position: relative; 
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;
+}
 
+/* Alinhamento dos elementos nos quadrantes que mostram a descrição acima */
+.quadranteAcima{
+    position: relative; 
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Estilização e reativação de cliques para os pontos de localização */
+.localizacao {
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     color: white;
-
+    font-family: sans-serif;
+    z-index: 5;
+    width: 100%; 
     text-align: center;
 }
 
-.localizacao.ativa .descricao {
+/* Estilização do texto dos títulos de cada localização */
+.localizacao h3 {
+    margin: 0 0 4px 0;
+    font-size: 1rem; 
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); 
+    transition: color 0.2s ease;
+    word-break: break-word;
+}
 
+/* Mudança de cor do título ao passar o mouse */
+.localizacao:hover h3 {
+    color: #ffab2d;
+}
+
+/* Dimensionamento e efeitos para as imagens dos locais */
+.localizacao img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 135px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+    border-radius: 2%;
+}
+
+/* Efeito de zoom na imagem ao passar o mouse */
+.localizacao:hover img {
+    transform: scale(1.10); /* Efeito sutil de feedback */
+}
+
+/* Estilização padrão da caixa de texto descritiva oculta */
+.descricao {
+    position: absolute;
+    /* Linha lógica do JS adicionará abaixo ou acima; controlamos o alinhamento horizontal aqui */
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: auto; /* Permite interação com a descrição */
+    
+    width: 230px; 
+    max-width: 85vw; 
+    
+    background-color: rgba(255, 255, 255, 0.95); 
+    box-sizing: border-box;
+    border: 3px solid #f29bfa;
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    z-index: 10; 
+
+    display: none;
+    opacity: 0;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Exibição e ativação visual da caixa de descrição */
+.descricao.ativa {
+    display: block;
     opacity: 1;
-
-    max-height: 1000px;
-
-    pointer-events: auto;
-
-    padding: 15px;
-}
-
-.localizacao.ativa .descricao p {
-
-    line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-
-    .localizacao {
-
-        width: 90%;
-    }
 }
