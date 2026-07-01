@@ -1,6 +1,16 @@
 #  Fandora — O Fã-Clube Mais Dedicado da Dora!
 
-Este repositório contém o código-fonte de uma página interativa de fã-clube dedicada à animação **Dora, a Aventureira**. O projeto foi estruturado com foco em semântica HTML5, estilização moderna e lúdica em CSS3, responsividade para dispositivos móveis e um toque de interatividade por meio de um Easter-Egg.
+Este repositório contém o código-fonte de uma página interativa de fã-clube dedicada à animação **Dora, a Aventureira**. O projeto foi estruturado com foco em semântica HTML5, estilização moderna e lúdica em CSS3, responsividade para dispositivos móveis e um toque de interatividade por meio de um Easter-Egg. 
+
+## Integrantes
+1- Rodrigo César de Moraes Tavares Filho  
+2- Ryan Lucas Pereira Costa
+3- Sophia de Jesus Braz
+4- Thauan Vitor Rezende
+
+## Link do Projeto
+
+https://rodrigocesarmoraes.github.io/Rodrigo-Cesar-Ryan-Lucas-Thauan-Sophia-Dora-e-Amigos/
 
 ##  Visual e Identidade do Projeto
 
