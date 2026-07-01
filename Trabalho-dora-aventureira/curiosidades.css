@@ -1,0 +1,294 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS E BASE (Baseado no seu Body e HTML)
+   ========================================================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh; 
+    margin: 15px;
+    background-attachment: fixed; 
+    color: #333; 
+    font-family: 'Quicksand', sans-serif;
+
+    background-image: linear-gradient(135deg, #ee8af7 0%, #a256f0 50%, #7b1fa2 100%);
+    
+    padding-top: 60px; 
+}
+
+/* Container de conteúdo para alinhar e centralizar as seções */
+section {
+    max-width: 1000px;
+    margin: 0 auto 25px auto;
+    padding: 20px;
+}
+
+/* ==========================================================================
+   HEADER (Títulos principais da página)
+   ========================================================================== */
+header h1 {
+    font-size: 2.5rem;
+    color: #4a0e4e;      
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+header p {
+    background-color: rgba(252, 133, 35, 0.85); 
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    color: white; 
+}
+
+
+h2 {
+    font-size: 1.8rem;
+    color: #ffab2d;     
+    margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   SEÇÃO: SOBRE A ANIMAÇÃO (Inspirado no #sobre-a-dora)
+   ========================================================================== */
+.sobre {
+    background-color: rebeccapurple;
+    padding: 25px;
+    border: 3px solid #f29bfa;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sobre:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================================================
+   SEÇÃO: CURIOSIDADES (Inspirado na estrutura do #fluxograma)
+   ========================================================================== */
+#curiosidades ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    list-style: none; 
+}
+
+#curiosidades li {
+    flex: 1;
+    min-width: 250px; 
+    background-color: rgba(252, 133, 35, 0.85);
+    padding: 20px;
+    border: 3px solid #f29bfa;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: white;
+}
+
+#curiosidades li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#curiosidades h2 {
+    color: #ffab2d;
+    width: 100%; 
+}
+
+#curiosidades strong {
+    color: #4a0e4e; 
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* ==========================================================================
+   SEÇÃO: DADOS / TABELA (Inspirado no #mapa_e_links e #Ensinamentos)
+   ========================================================================== */
+#dados {
+    background-color: rebeccapurple;
+    padding: 25px;
+    border: 3px solid #f29bfa;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-top: 25px;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#dados:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilização da Tabela para se adequar ao design */
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 15px;
+    background-color: rgba(252, 133, 35, 0.15); 
+    border: 2px solid #f29bfa !important; 
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid rgba(242, 155, 250, 0.4);
+}
+
+th {
+    background-color: rgba(74, 14, 78, 0.85); 
+    color: #ffab2d;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05); 
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap; /* Garante que em telas muito pequenas o texto quebre para baixo da imagem */
+}
+
+.sobre img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    background-color: rgba(255, 255, 255, 0.1); /* Um leve fundo para destacar imagens transparentes */
+    padding: 5px;
+}
+
+/* Garante que o conteúdo de texto ocupe o espaço restante ao lado da imagem */
+.sobre h2, .sobre p, .sobre h3 {
+    flex: 1;
+    min-width: 280px; /
+}
+
+/* Ajuste específico para manter a estrutura do título principal acima do texto */
+.sobre h2 {
+    width: 100%;
+    margin-top: 0;
+}
+
+
+
+
+/* ==========================================================================
+   RESPONSIVIDADE
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 10px;
+        padding-top: 80px; 
+    }
+
+    section {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    #curiosidades ol {
+        flex-direction: column;
+    }
+
+    #curiosidades li {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+
+    #dados {
+        overflow-x: auto;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    th, td {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    .sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .sobre img {
+        max-width: 200px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        margin: 5px;
+        padding-top: 90px; 
+    }
+
+    section {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.95rem;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #curiosidades li {
+        padding: 12px;
+    }
+
+    #curiosidades strong {
+        font-size: 1rem;
+    }
+
+    th, td {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
+}
