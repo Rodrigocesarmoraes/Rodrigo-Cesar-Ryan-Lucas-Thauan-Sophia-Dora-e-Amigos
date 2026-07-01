@@ -1,6 +1,4 @@
-/* ==========================================================================
-   CONFIGURAÇÕES GERAIS E BASE (Baseado no seu Body e HTML)
-   ========================================================================== */
+
 html {
     scroll-behavior: smooth;
 }
@@ -17,16 +15,13 @@ body {
     padding-top: 60px; 
 }
 
-/* Container de conteúdo para alinhar e centralizar as seções */
+
 section {
     max-width: 1000px;
     margin: 0 auto 25px auto;
     padding: 20px;
 }
 
-/* ==========================================================================
-   HEADER (Títulos principais da página)
-   ========================================================================== */
 header h1 {
     font-size: 2.5rem;
     color: #4a0e4e;      
@@ -52,9 +47,6 @@ h2 {
     margin-bottom: 15px;
 }
 
-/* ==========================================================================
-   SEÇÃO: SOBRE A ANIMAÇÃO (Inspirado no #sobre-a-dora)
-   ========================================================================== */
 .sobre {
     background-color: rebeccapurple;
     padding: 25px;
@@ -70,9 +62,6 @@ h2 {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* ==========================================================================
-   SEÇÃO: CURIOSIDADES (Inspirado na estrutura do #fluxograma)
-   ========================================================================== */
 #curiosidades ol {
     display: flex;
     flex-wrap: wrap;
@@ -111,9 +100,6 @@ h2 {
     margin-bottom: 8px;
 }
 
-/* ==========================================================================
-   SEÇÃO: DADOS / TABELA (Inspirado no #mapa_e_links e #Ensinamentos)
-   ========================================================================== */
 #dados {
     background-color: rebeccapurple;
     padding: 25px;
@@ -130,7 +116,7 @@ h2 {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Estilização da Tabela para se adequar ao design */
+
 table {
     width: 100%;
     border-collapse: collapse; 
@@ -161,7 +147,7 @@ tr:nth-child(even) {
     display: flex;
     align-items: center;
     gap: 25px;
-    flex-wrap: wrap; /* Garante que em telas muito pequenas o texto quebre para baixo da imagem */
+    flex-wrap: wrap; 
 }
 
 .sobre img {
@@ -171,28 +157,22 @@ tr:nth-child(even) {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     object-fit: cover;
-    background-color: rgba(255, 255, 255, 0.1); /* Um leve fundo para destacar imagens transparentes */
+    background-color: rgba(255, 255, 255, 0.1); 
     padding: 5px;
 }
 
-/* Garante que o conteúdo de texto ocupe o espaço restante ao lado da imagem */
+
 .sobre h2, .sobre p, .sobre h3 {
     flex: 1;
     min-width: 280px; /
 }
 
-/* Ajuste específico para manter a estrutura do título principal acima do texto */
+
 .sobre h2 {
     width: 100%;
     margin-top: 0;
 }
 
-
-
-
-/* ==========================================================================
-   RESPONSIVIDADE
-   ========================================================================== */
 @media screen and (max-width: 768px) {
     body {
         margin: 10px;
