@@ -1,84 +1,118 @@
-body {
-    min-height: 100px;
-    margin: 15px;
-    background-attachment: fixed;
-    font-family: 'Quicksand', sans-serif;
-    color: #333;
-    background-image: linear-gradient(135deg, #ee8af7 0%, #a256f0 50%, #7b1fa2 100%);
+.content {
+    max-width: 1000px;  
+    margin: 110px auto 40px auto;     
+    padding: 0 20px;
 }
 
-h1 {
-    font-size: 2.5rem;
+header {
+    background-color: rgba(74, 14, 78, 0.95); 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 15px 0; 
+    margin: 0; 
+    border-radius: 0 0 15px 15px; 
+    border-bottom: 3px solid #f29bfa;
+}
+
+.nav-container {
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 0 20px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: nowrap; 
+}
+
+
+header h1 {
+    font-size: 1.5rem;
+    color: #ffab2d; 
+    margin: 0;
+    text-align: left;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px; 
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem; 
+    padding: 8px 12px;
+    border-radius: 8px;
+    white-space: nowrap; 
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
     color: #4a0e4e;
-    text-align: center;
-    margin-bottom: 20px;
+    background-color: #ffab2d; 
 }
 
-h2 {
-    font-size: 1.8rem;
-    color: #ffab2d;
-    margin-bottom: 15px;
-}
 
 .personagem {
-    background-color: rebeccapurple;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 3px solid #f29bfa; 
+    border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    font-family: 'Quicksand', sans-serif;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.curiosidade {
+
+.personagem:nth-of-type(odd) {
     background-color: rebeccapurple;
-    padding: 15px;
-    border-left: 3px solid #f29bfa;
-    border-radius: 5px;
 }
 
-ul {
-    padding-left: 20px;
+.personagem:nth-of-type(odd) h2 {
+    color: #ffab2d; 
 }
 
-/* ===========================
-   RESPONSIVIDADE
-   =========================== */
 
-@media (max-width: 768px) {
+.personagem:nth-of-type(even) {
+    background-color: rgba(252, 133, 35, 0.85);
+}
 
-    /* Organiza o menu em coluna para não espremer os links */
-    .nav-container {
-        flex-direction: column;
-        gap: 15px;
-        padding: 5px 10px;
-    }
+.personagem:nth-of-type(even) h2 {
+    color: #4a0e4e; 
+}
 
-    /* Permite que os links quebrem linha de forma organizada se faltar espaço */
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
+.personagem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
 
-    .nav-links a {
-        font-size: 0.85rem;
-        padding: 6px 10px;
-    }
+.curio_box { /* Adicione ou ajuste este bloco */
+    background-color: rgba(252, 133, 35, 0.85);
+    padding: 25px;
+    border: 3px solid #f29bfa;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    color: white;
+    margin-bottom: 40px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-    .content {
-        margin-top: 140px;
-        padding: 0 15px;
-    }
+.curio_box h3 {
+    font-size: 1.8rem;
+    color: #4a0e4e;
+    margin-bottom: 15px;
+}
 
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.4rem;
-    }
-
-    #fluxograma li {
-        min-width: 100%;
-    }
+.curio_box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
