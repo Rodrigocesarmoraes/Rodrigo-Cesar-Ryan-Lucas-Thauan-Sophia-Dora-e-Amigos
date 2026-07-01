@@ -1,11 +1,11 @@
-/* Matriz que representa a estrutura lógica de linhas e colunas do mapa */
+// Matriz que representa a estrutura lógica de linhas e colunas do mapa 
 const mapa = [
     [0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0]
 ];
 
-/* Captura de todos os elementos HTML de localização */
+// Captura de todos os elementos HTML de localização 
 const locais = [
     document.querySelector(".localizacao[data-local='1']"),
     document.querySelector(".localizacao[data-local='2']"),
@@ -16,7 +16,7 @@ const locais = [
     document.querySelector(".localizacao[data-local='7']")
 ];
 
-/* Captura de todos os elementos HTML de descrição correspondentes */
+// Captura de todos os elementos HTML de descrição correspondentes 
 const descricoes = [
     document.querySelector(".descricao[data-local='1']"),
     document.querySelector(".descricao[data-local='2']"),
@@ -27,7 +27,7 @@ const descricoes = [
     document.querySelector(".descricao[data-local='7']")
 ];
 
-/* Variável de controle para rastrear qual descrição está aberta no momento */
+// Variável de controle para rastrear qual descrição está aberta no momento 
 let descricaoAberta = null;
 
 // Geração de posições aleatórias para as localizações nas colunas do mapa
