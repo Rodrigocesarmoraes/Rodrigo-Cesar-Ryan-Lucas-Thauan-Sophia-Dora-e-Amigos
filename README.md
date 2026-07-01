@@ -5,9 +5,7 @@ Este repositório contém o código-fonte de uma página interativa de fã-clube
 ## Integrantes
 1- Rodrigo César de Moraes Tavares Filho  
 2- Ryan Lucas Pereira Costa
-
 3- Sophia de Jesus Braz
-
 4- Thauan Vitor Rezende
 
 ## Link do Projeto
