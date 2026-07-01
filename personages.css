@@ -1,23 +1,22 @@
 body {
     min-height: 100px;
     margin: 15px;
-    background-attachment: fixed; 
-    font-family: sans-serif;
-    color: #333; 
+    background-attachment: fixed;
     font-family: 'Quicksand', sans-serif;
+    color: #333;
     background-image: linear-gradient(135deg, #ee8af7 0%, #a256f0 50%, #7b1fa2 100%);
 }
 
 h1 {
     font-size: 2.5rem;
-    color: #4a0e4e;     
+    color: #4a0e4e;
     text-align: center;
     margin-bottom: 20px;
 }
 
 h2 {
     font-size: 1.8rem;
-    color: #ffab2d;     
+    color: #ffab2d;
     margin-bottom: 15px;
 }
 
@@ -39,4 +38,47 @@ h2 {
 
 ul {
     padding-left: 20px;
+}
+
+/* ===========================
+   RESPONSIVIDADE
+   =========================== */
+
+@media (max-width: 768px) {
+
+    /* Organiza o menu em coluna para não espremer os links */
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 5px 10px;
+    }
+
+    /* Permite que os links quebrem linha de forma organizada se faltar espaço */
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
+
+    .content {
+        margin-top: 140px;
+        padding: 0 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    #fluxograma li {
+        min-width: 100%;
+    }
 }
