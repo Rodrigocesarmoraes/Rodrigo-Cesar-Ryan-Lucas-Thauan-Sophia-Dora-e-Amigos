@@ -124,3 +124,18 @@
     border-bottom-color: #ffffff;
 
 }
+
+/* Estilização do Easter-Egg  */
+.mapa-easter-egg {
+    width: 10px;
+    height: auto;
+    cursor: pointer;
+    /* Muda o mouse para indicar que dá para clicar */
+    transition: transform 0.2s ease;
+    display: inline-block;
+    margin-top: 3px;
+}
+
+.mapa-easter-egg:hover {
+    transform: scale(1.1) rotate(5deg);
+}
